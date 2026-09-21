@@ -93,5 +93,5 @@ GAME: Story Detective (lateral thinking puzzles). Present a strange scenario; yo
 ];
 
 export function getGame(id: string | undefined): GameDef {
-  return GAMES.find((g) => g.id === id) ?? GAMES[0];
+  return GAMES.find((g) => g.id === id) ?? (GAMES[0] as GameDef);
 }
